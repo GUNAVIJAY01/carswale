@@ -13,7 +13,7 @@ import { BrowserRouter,Routes,Route } from "react-router-dom"
 export const Routings=()=>{
     return(<>
         {/* <Provider store={cv}> */}
-        <BrowserRouter>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
         {/* <Nav/> */}
         <Routes>
             <Route path="/" element={<p>dfgh</p>}></Route>
