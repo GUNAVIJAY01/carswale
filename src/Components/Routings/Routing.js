@@ -16,6 +16,7 @@ export const Routings=()=>{
         <BrowserRouter>
         {/* <Nav/> */}
         <Routes>
+            <Route path="/" element={<p>dfgh</p>}></Route>
             
             {/* <Route path="/" element={<Home/>}></Route>
             <Route path="/Brand" element={<BrandPage/>}></Route>
@@ -24,7 +25,7 @@ export const Routings=()=>{
             <Route path="/Choice" element={<Choice/>}></Route>
   */}
         </Routes>
-        <Footer/>
+        {/* <Footer/> */}
         </BrowserRouter>
         {/* </Provider> */}
     </>)

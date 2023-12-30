@@ -1,9 +1,9 @@
 import './App.css';
-import "../src/Components/Routings"
+import { Routings } from './Components/Routings/Routing';
 function App() {
   return (
-    <div className="App">
-      <Routing/>
+    <div >
+      <Routings/>
     </div>
   );
 }
