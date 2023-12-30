@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/carswale/static/css/main.f855e6bc.css",
+    "main.js": "/carswale/static/js/main.fb9338bd.js",
+    "static/js/787.c702741c.chunk.js": "/carswale/static/js/787.c702741c.chunk.js",
+    "index.html": "/carswale/index.html",
+    "main.f855e6bc.css.map": "/carswale/static/css/main.f855e6bc.css.map",
+    "main.fb9338bd.js.map": "/carswale/static/js/main.fb9338bd.js.map",
+    "787.c702741c.chunk.js.map": "/carswale/static/js/787.c702741c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.fb9338bd.js"
+  ]
+}
