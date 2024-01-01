@@ -7,7 +7,7 @@ export const Banner=()=>{
 
     return (<Box component="div" sx={{backgroundImage:"url('https://imgd.aeplcdn.com/1920x580/media/cw/nnqo5bb_1695261.jpg')",backgroundPosition:{xs:"left",md:"center",sm:"left"},backgroundRepeat:"no-repeat",backgroundSize:"cover",height:{xs:"100%",sm:"100%",lg:"100%"},display:{xs:{width:"100%"}}}} className="banner" >
         <Box component="div"className="row" sx={{alignItems:"center",justifyContent:"center",height:{xs:"50vh",md:"80vh"},position:"relative"}}>
-    <Box sx={{display:{xs:""},width:{xs:"80%",md:"50%"},textAlign:"center",position:"absolute",bottom:{xs:"10px",sm:"60px",md:"10px"}}}>
+    <Box sx={{display:{xs:""},width:{xs:"80%",md:"50%"},textAlign:"center",position:"absolute",right:{lg:"25%"},bottom:{xs:"10px",sm:"60px",md:"10px"}}}>
       <Box component="h1" sx={{color:"white",margin:1,fontSize:{xs:"18px"}}} >FIND THE RIGHT CAR</Box>  
     
     <Box sx={{backgroundColor:"white",padding:"2px" ,position:"relative",display:"flex"}}>

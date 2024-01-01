@@ -215,7 +215,7 @@ return(<Container maxWidth="lg">
                              
                         <Box sx={{border:{md:"none",lg:"1px solid lightgray"},padding:"10px",width:"100%",margin:"10px 0"}}>
                              <Box sx={{display:"flex",flexWrap:"wrap",alignItems:"center",position:"relative"}}>
-                                <Box sx={{width:{xs:"40%",md:"40%"}}}onClick={()=>Cliks(v.BrandId,val.No)}>
+                                <Box sx={{width:{xs:"40%",md:"40%"},cursor:"pointer"}}onClick={()=>Cliks(v.BrandId,val.No)}>
 
                                 <img src={val.CarImg}width="100%"/>
                                 </Box>
@@ -339,7 +339,7 @@ return(<Container maxWidth="lg">
                  
                  </>)
             })}
- {compar && <Box sx={{position:{xs:"fixed",sm:"fixed",md:"fixed"},backgroundColor:"rgb(243 239 239)",height:{xs:"100%",sm:"580px",md:"60%"},width:{xs:"100%",sm:"50%",md:"50%",lg:"50%"},top:{xs:"0",sm:"20%",md:"25%"},right:{xs:"0",md:"30%"},bottom:{sm:"0px"},left:{sm:"20%",md:"unset",},zIndex:"99"}}>
+ {compar && <Box sx={{position:{xs:"fixed",sm:"fixed",md:"fixed"},backgroundColor:"rgb(243 239 239)",height:{xs:"100%",sm:"580px",md:"50%",lg:"75%"},width:{xs:"100%",sm:"50%",md:"50%",lg:"600px"},top:{xs:"0",sm:"20%",md:"25%",lg:"15%"},right:{xs:"0",md:"30%",lg:"28%"},bottom:{sm:"0px"},left:{sm:"20%",md:"unset",},zIndex:"99"}}>
     
     <Box className="bg" sx={{width:"100%",margin:"30px 0 0 0",position:"relative"}}>
            <h5 style={{margin:"45px 0 10px 40px"}}>Select Your Brand  Channel</h5> 
@@ -354,7 +354,7 @@ return(<Container maxWidth="lg">
                 <span style={{position:"absolute",top:"-8px",left:"12px",fontSize:"25px"}}><BiSearch/></span>
                 </Box>          
                 <h5 style={{padding:"30px 0 10px 0"}}>POPULAR BRANDS</h5>
-                <Box sx={{overflow:"auto",width:{xs:"100%",sm:"100%",md:"450px",lg:"630px"},height:{xs:"80vh",sm:"400px",md:"615px",lg:"380px"}}}>
+                <Box sx={{overflow:"auto",width:{xs:"100%",sm:"100%",md:"450px",lg:"550px"},height:{xs:"80vh",sm:"400px",md:"615px",lg:"47vh"}}}>
                  
                 {sear.map((vl,ind)=>{
                      return(<Box key={ind} sx={{width:"100%"}}>
@@ -372,7 +372,7 @@ return(<Container maxWidth="lg">
         <AccordionDetails>
           {vl.Collection.map((v,ind)=>{
                 return(<Box key={ind}>
-                        <Typography onClick={()=>nums(vl.BrandId,v.No)}  sx={{padding:"5px 10px"}}>
+                        <Typography onClick={()=>nums(vl.BrandId,v.No)}  sx={{padding:"5px 10px",cursor:"pointer"}}>
                             {v.CarName}
                         </Typography>
                 </Box>)
@@ -390,7 +390,7 @@ return(<Container maxWidth="lg">
     </Box>} 
     
     
-{cmpr && <Box sx={{position:{xs:"fixed",sm:"fixed",md:"fixed"},backgroundColor:"rgb(243 239 239)",height:{xs:"100%",sm:"580px",md:"50%"},width:{xs:"100%",sm:"50%",md:"500px"},top:{xs:"0",sm:"20%",md:"25%"},right:{xs:"0",md:"30%"},bottom:{sm:"0px"},left:{sm:"20%",md:"unset"},zIndex:"99"}}>
+{cmpr && <Box sx={{position:{xs:"fixed",sm:"fixed",md:"fixed"},backgroundColor:"rgb(243 239 239)",height:{xs:"100%",sm:"580px",md:"50%",lg:"70%"},width:{xs:"100%",sm:"50%",md:"500px",lg:"600px"},top:{xs:"0",sm:"20%",md:"25%",lg:"15%"},right:{xs:"0",md:"30%"},bottom:{sm:"0px"},left:{sm:"20%",md:"unset"},zIndex:"99"}}>
     
     <Box className="bg" sx={{width:"100%",margin:"30px 0 0 0",position:"relative"}}>
            <h5 style={{margin:"45px 0 10px 40px"}}>Select Your Brand Channel</h5> 
@@ -405,7 +405,7 @@ return(<Container maxWidth="lg">
                 <span style={{position:"absolute",top:"-8px",left:"12px",fontSize:"25px"}}><BiSearch/></span>
                 </Box>          
                 <h5 style={{padding:"30px 0 10px 0"}}>POPULAR BRANDS</h5>
-                <Box sx={{overflow:"auto",width:{xs:"100%",sm:"100%",md:"450px",},height:{xs:"80vh",sm:"400px",md:"500px"}}}>
+                <Box sx={{overflow:"auto",width:{xs:"100%",sm:"100%",md:"450px",lg:"550px"},height:{xs:"80vh",sm:"400px",md:"500px",lg:"47vh"}}}>
                  
                 {sear.map((vl,ind)=>{
                      return(<Box key={ind} sx={{width:"100%"}}>
@@ -417,13 +417,13 @@ return(<Container maxWidth="lg">
         >
         <Box sx={{display:"flex",alignItems:"center"}}>
             <img src={vl.BrandImage} style={{width:"70px"}}/>
-        <Typography sx={{padding:"0 5px"}}  >{vl.Name}</Typography>
+        <Typography sx={{padding:"0 5px",}}  >{vl.Name}</Typography>
         </Box>
         </AccordionSummary>
         <AccordionDetails>
           {vl.Collection.map((v,ind)=>{
                 return(<Box key={ind}>
-                        <Typography onClick={()=>num(vl.BrandId,v.No)}  sx={{padding:"5px 10px"}}>
+                        <Typography onClick={()=>num(vl.BrandId,v.No)} sx={{padding:"5px 10px",cursor:"pointer"}}>
                             {v.CarName}
                         </Typography>
                 </Box>)
